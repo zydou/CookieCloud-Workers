@@ -1,0 +1,4 @@
+# 允许 esbuild/workerd 运行 postinstall 构建脚本 (wrangler dev/deploy 依赖 workerd 二进制)
+allowBuilds:
+  esbuild: true
+  workerd: true

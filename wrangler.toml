@@ -1,0 +1,12 @@
+name = "cookiecloud"
+main = "src/index.ts"
+compatibility_date = "2026-08-04" # >= 2026-08-04: nodejs_compat 默认启用, node:crypto 可用
+workers_dev = true
+
+[vars]
+# 与原 Express 服务端 API_ROOT 环境变量一致的可选子路径前缀, 留空则绑定根路径
+API_ROOT = ""
+
+[[r2_buckets]]
+binding = "COOKIE_BUCKET"
+bucket_name = "cookiecloud"
